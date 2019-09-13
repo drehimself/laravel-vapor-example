@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel Vapor Example
                 </div>
 
                 <div class="links">

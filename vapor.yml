@@ -1,0 +1,17 @@
+id: 1425
+name: laravel-vapor-example
+environments:
+    production:
+        memory: 1024
+        cli-memory: 512
+        build:
+            - 'composer install --no-dev --classmap-authoritative'
+            - 'php artisan event:cache'
+            - 'npm install && npm run prod && rm -rf node_modules'
+    staging:
+        memory: 1024
+        cli-memory: 512
+        build:
+            - 'composer install --classmap-authoritative'
+            - 'php artisan event:cache'
+            - 'npm install && npm run dev && rm -rf node_modules'

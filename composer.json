@@ -11,7 +11,12 @@
         "php": "^7.2",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.0",
-        "laravel/tinker": "^1.0"
+        "laravel/horizon": "^3.3",
+        "laravel/tinker": "^1.0",
+        "laravel/ui": "^1.0",
+        "laravel/vapor-cli": "^1.2",
+        "laravel/vapor-core": "^2.0",
+        "predis/predis": "^1.1"
     },
     "require-dev": {
         "facade/ignition": "^1.4",
