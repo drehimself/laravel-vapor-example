@@ -11,7 +11,12 @@ environments:
     staging:
         memory: 1024
         cli-memory: 512
+        domain: andredemos.ca
+        storage: drehimself
+        database: my-test-database
         build:
             - 'composer install --classmap-authoritative'
             - 'php artisan event:cache'
             - 'npm install && npm run dev && rm -rf node_modules'
+        deploy:
+            - 'php artisan migrate --force'
